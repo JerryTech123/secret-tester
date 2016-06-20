@@ -5,6 +5,11 @@
 #include "constants.h"
 #include "secret.h"
 
+/*
+secretTester.c tests the secret function defined in secret.c to test that it is additive across all prime numbers between 1 and a value entered
+as a command line argument
+*/
+
 int main (int argc, char *argv[]){
 	int numEntered; 			//the integer entered from the command line
 	int primesFound; 			//the number of primes that were found between 1 and the user-entered number
@@ -73,12 +78,5 @@ int main (int argc, char *argv[]){
 	
 	//If program execution reaches this point, then all of our tests against secret() have passed
 	printf("secret() is additive for all primes less than the number entered from the command line");
-	
-	//printf("%d arguments were entered\n", argc);
-    //printf("You entered the number %d\n", numEntered);
-
-	
-
-	
     return 0;
 } 

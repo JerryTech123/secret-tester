@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include "constants.h"
 
+/*
+This code generates a list of primes using the Sieve of Eratosthenes implementation outlined at:
+http://www.programminglogic.com/the-sieve-of-eratosthenes-implemented-in-c/
+and has been modified to fit the needs of this application
+*/
 int generatePrimes(int num, int primes[PRIMES]){
     int i,j;
 	int numPrimesFound = 0;
@@ -44,3 +49,4 @@ int generatePrimes(int num, int primes[PRIMES]){
 	
 	return 0;
 }
+
