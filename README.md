@@ -17,8 +17,8 @@ found for the given value of LIMIT.
 
 secret.c contains two secret functions that can be used in secretTester. Edit secret.c and uncomment the desired secret function
 that you want to test, but be sure that one and only one secret function exists (is not commented) at one time. To test your own secret
-function, overwrite the code in secret.c with the implementation of your own secret function. The command from line 7 must be executed
-again anytime the secret function is changed, and the secret function *must* match the following form:
+function, overwrite the code in secret.c with the implementation of your own secret function. The compile command above must be executed
+again any time the secret function is changed, and the secret function *must* match the following form:
 
 int secret(int num)
 
