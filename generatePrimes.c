@@ -14,7 +14,6 @@ int generatePrimes(int num, int primes[PRIMES]){
 		/*fill the array with natural numbers*/
 		 for (i = 0; i < num - 2; i++){
 			 numbers[i] = i + 2;
-			 printf("%d added to numbers array\n",numbers[i]);
 		 }
 
 		// /*sieve the non-primes*/
@@ -35,9 +34,9 @@ int generatePrimes(int num, int primes[PRIMES]){
 		 }
 
 		// /*print*/
-		 for (i = 0; i < numPrimesFound; i++){
-			 printf("%d\n",primes[i]);
-		 }
+		// for (i = 0; i < numPrimesFound; i++){
+		//	 printf("%d\n",primes[i]);
+		 //}
 
 		 free(numbers);
 		 return numPrimesFound;

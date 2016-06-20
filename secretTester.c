@@ -31,10 +31,14 @@ int main (int argc, char *argv[]){
 		
 		numEntered = atoi(argv[1]);
 		
-		printf("generating primes...\n");
+		if(numEntered > LIMIT){
+			printf("%d exceeds the input limit of %d\n", numEntered, LIMIT);
+			return 0;
+		}
 		//collect the prime numbers between 1 and numEntered
 		primesFound = generatePrimes(numEntered,primes);
-		printf("%d primes were found\n", primesFound);
+		//printf("%d primes were found\n", primesFound);
+		printf("Testing Secret()...\n", primesFound);
 	} else if(argc > 2){
 		printf("Too many arguments entered. I was expecting a single integer.\n");
 		return 0;
@@ -50,7 +54,7 @@ int main (int argc, char *argv[]){
 	for(i = 0; i < primesFound - 2; i++){
 		for(j = i + 1; j < primesFound - 1; j++){
 		
-			printf("testing %d against %d\n",primes[i],primes[j]);
+			//printf("testing %d against %d\n",primes[i],primes[j]);
 		
 			secretX_Y = secret(primes[i] + primes[j]);
 			secretX = secret(primes[i]);
