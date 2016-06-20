@@ -35,6 +35,10 @@ int main (int argc, char *argv[]){
 			printf("%d exceeds the input limit of %d\n", numEntered, LIMIT);
 			return 0;
 		}
+		if(numEntered < 4){
+			printf("In order to have at least 2 primes to test against, the number entered must be greater than 3\n");
+			return 0;
+		}
 		//collect the prime numbers between 1 and numEntered
 		primesFound = generatePrimes(numEntered,primes);
 		//printf("%d primes were found\n", primesFound);
