@@ -80,3 +80,4 @@ int main (int argc, char *argv[]){
 	printf("secret() is additive for all primes less than the number entered from the command line");
     return 0;
 } 
+
