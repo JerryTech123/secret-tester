@@ -24,7 +24,7 @@ int main (int argc, char *argv[]){
 			
 			//make sure that the user gave us an integer, and if the user did not, tell them what went wrong
 			if(!isdigit(argv[1][i])){
-				printf("Number entered is not an integer.\n");
+				printf("Number entered is not a positive integer.\n");
 				return 0;
 			}
 		}
